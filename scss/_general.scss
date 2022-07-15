@@ -1,0 +1,257 @@
+* {
+
+    margin: 0px;
+
+    padding: 0px;
+
+}
+
+/*menu principal*/
+.home {
+    border-color: red;
+    background-color: $bgColor;
+
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 90%;
+    margin: auto;
+
+    body {
+        background-image: url('../img/fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    h3 {
+
+        font-size: 50px;
+        font-style: italic;
+    
+    }
+    
+    h1 {
+        font-style: italic;
+        color: $h1;
+        font-family: fantasy;
+        text-align: center;
+    }
+    
+    ul {
+        color: rgb(38, 40, 116)
+    }
+
+}
+
+
+
+
+
+.boton-comprar {
+    width: 100%;
+}
+
+
+
+
+
+.boxmodeldiv {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200;
+    overflow: auto;
+}
+
+/* nosotros */
+
+.contacto {
+    font-style: italic;
+    margin-left: 100px;
+    margin-bottom: 200;
+    margin-right: 100;
+}
+
+
+/* productos */
+.piscina {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hogar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.padre {
+    background-color: white;
+}
+
+.hijo {
+    background-color: gainsboro;
+    border: solid 1px rgb(3, 3, 3);
+}
+
+#productos div,
+#servicios div {
+    border: solid 1px;
+    padding: 5px;
+    background-color: bisque;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+
+/* GRIDS */
+
+.grid-container {
+    display: grid;
+    background-color: aliceblue;
+
+
+}
+
+.grid-container div {
+    background-color: lightblue;
+}
+
+.padre-nosotros {
+    display: grid;
+
+    grid-template-rows: repeat(2, 2fr);
+}
+
+
+.hijo-nosotros {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+.logo-menu {
+    width: 250px;
+    height: 250px;
+}
+
+.fotos-productos img {
+    width: 200px;
+    height: 200px;
+}
+
+.mapouter {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/*transformacion*/
+
+.container {
+    width: 500px;
+    height: 270px;
+    margin: 300px auto;
+    border: 10px solid black;
+
+}
+
+.item {
+    background: rgb(240, 241, 241);
+    width: -100px;
+    height: 170px;
+    color: azure;
+}
+
+.container:hover .item {
+    transform: scale(2);
+}
+
+
+
+
+
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .padre-nosotros {
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
+    }
+
+    .hijo-nosotros {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+
+/*redes*/
+.bi-facebook {
+
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    color: blue
+}
+
+
+.bi-whatsapp {
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    color: rgb(20, 119, 25);
+}
+
+.bi-whatsapp:hover {
+    color: #25D366;
+}
+
+.bi-instagram {
+
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    color: rgb(160, 88, 41);
+}
